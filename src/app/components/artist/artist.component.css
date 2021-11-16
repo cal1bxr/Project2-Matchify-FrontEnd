@@ -29,6 +29,9 @@ img{
 #card5 {
     grid-area: card5;
 }
+#card6 {
+    grid-area: card5;
+}
 
 .container {
     max-width: auto;

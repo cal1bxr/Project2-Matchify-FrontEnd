@@ -50,7 +50,11 @@ export class LoginService {
     this.http.post('https://accounts.spotify.com/api/token', body, httpOptions).subscribe(
       (response: any)=>{ this.accessToken = response.body.access_token;
         this.refreshToken = response.body.refresh_token;
-      return this.accessToken, this.refreshToken, this.code});
+      return this.accessToken, this.refreshToken, this.code},
+      (error: any) => {console.log("Http error: ", error);
+                  if(error.status == 503 || error.status == 504){
+                    this.router.navigate(['error']);
+                  }});
   }
 
   getRefreshToken(accessToken: string, refreshToken: string, code: string){

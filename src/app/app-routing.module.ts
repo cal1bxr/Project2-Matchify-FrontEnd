@@ -1,6 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-// import { ArtistComponent } from './components/artist/artist.component';
+import { ArtistComponent } from './components/artist/artist.component';
+import { ErrorComponent } from './components/error/error.component';
 
 import { FavoritesComponent } from './components/favorites/favorites.component';
 
@@ -18,8 +19,9 @@ const routes: Routes = [
   {path: 'home', component: HomeComponent},
   {path: 'songs', component: SongComponent},
   {path: 'registration', component: RegistrationComponent},
-  // {path: 'artists', component: ArtistComponent},
-  {path: 'favorites', component: FavoritesComponent}
+  {path: 'artists', component: ArtistComponent},
+  {path: 'favorites', component: FavoritesComponent},
+  {path: 'error', component: ErrorComponent}
 
 ];
 
