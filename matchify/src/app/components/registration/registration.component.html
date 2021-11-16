@@ -1,0 +1,33 @@
+<!-- email
+    first name
+    last name
+    description text field
+-->
+<div class="container">
+<div>
+    <h1>User Registration</h1>
+    <div class="form-group">
+        <label for="firstName">First name</label>
+        <input type="text" class="form-control" #firstName="ngModel" id="firstName"  name="firstName" placeholder="Enter your first name" ngModel required>
+    
+    </div>
+    <div class="form-group">
+        <label for="lastName">Last name</label>
+        <input type="text" class="form-control" #lastName="ngModel" id="lastName"  name="lastName" placeholder="Enter your last name"  ngModel required>
+        
+    </div>
+    <!-- <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" class="form-control" #email="ngModel" id="email"  name="email" placeholder="Enter your email" ngModel required>
+    </div> -->
+    <div class="form-group">
+        <label for="description">Description</label>
+        <textarea id="description" #description="ngModel" name="description" rows="4" cols="50" placeholder="Tell us something about yourself"
+        ngModel></textarea>
+    </div>
+</div>
+<app-button text="Submit" (click)="login(firstName, lastName, description)"></app-button>
+
+
+
+</div>

@@ -1,0 +1,25 @@
+.navbar {
+    height: 33px;
+
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    overflow: hidden;  
+}
+
+li {
+    color: #1DB954;
+    float: left;
+    display: block;
+    text-align: center;
+    padding: 4px 16px;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+    color: inherit;
+
+}

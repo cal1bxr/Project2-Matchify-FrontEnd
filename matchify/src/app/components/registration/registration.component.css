@@ -1,0 +1,21 @@
+body {
+    color: #000;
+}
+.form-group {
+    display: left;
+}
+
+label {
+    display: block;
+}
+
+input {
+    height: 30px;
+    margin: 0;
+    width: 100%;
+    background-color: lightgray;
+}
+
+textarea {
+    background-color: lightpink;
+}
